@@ -7,11 +7,14 @@ from tkinter import messagebox
 from tkinter import filedialog
 from datetime import datetime
 
+
+import custom_messageboxes
 from customers import *
 from products import *
 from orders import *
 from error_handling import *
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+from custom_messageboxes import *
 from dashboard import *
 
 # Constant values
