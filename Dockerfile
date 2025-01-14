@@ -13,9 +13,9 @@ RUN apt-get update && \
     tzdata \
     net-tools \
     procps \
-    python3 \
-    python3-pip \
-    python3-tk \
+    python \
+    python-pip \
+    python-tk \
     tightvncserver \
     x11vnc \
     xterm \
@@ -55,4 +55,4 @@ CMD ["sh", "-c", "export XAUTHORITY=$HOME/.Xauthority && \
                    dbus-launch Xvfb :99 -screen 0 1024x768x16 & \
                    tightvncserver :1 && \
                    tail -f /dev/null \
-                   python3 /app/main.py"]
+                   python /app/main.py"]
