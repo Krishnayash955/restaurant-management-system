@@ -1313,7 +1313,7 @@ def main():
         app = GUI(window)
         app.window.mainloop()
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error: ",e)
     finally:
         if 'app' in locals() and hasattr(app, 'pizzas') and hasattr(app.pizzas, 'close_connection'):
             app.pizzas.close_connection()
