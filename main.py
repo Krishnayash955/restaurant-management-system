@@ -1315,7 +1315,8 @@ def main():
     except Exception as e:
         print(f"Error: {e}")
     finally:
-        app.pizzas.close_connection()
+        if 'app' in locals() and hasattr(app, 'pizzas') and hasattr(app.pizzas, 'close_connection'):
+            app.pizzas.close_connection()
 
 
 if __name__ == "__main__":
