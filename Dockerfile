@@ -42,7 +42,7 @@ RUN touch /root/.Xauthority && \
     chmod 600 /root/.Xauthority
 
 # Expose VNC port for GUI access
-EXPOSE 5901
+EXPOSE 5000
 
 # Create and update xstartup file to run XFCE4 session
 RUN echo -e "#!/bin/bash\n\
